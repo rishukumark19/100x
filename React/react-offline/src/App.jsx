@@ -15,14 +15,36 @@ function App() {
 }
 const style = {
   backgroundColor: "white",
-  borderRadius: "10px",
-  borderColor: "black",
-  borderStyle: "solid",
-  borderWidth: "1px",
-  width: "200",
+  borderRadius: 10,
+  borderColor: "grey",
+  borderWidth: 1,
+  width: 200,
+  display: "flex",
 };
 function PostComponent() {
-  return <>hi there</>;
+  return (
+    <>
+      <div style={style}>
+        <img
+          src={"https://picsum.photos/400/300"}
+          alt="Hero"
+          style={{
+            width: 20,
+            height: 20,
+            borderRadius: 20,
+          }}
+        />
+        <div style={{ fontSize: 10 }}>
+          <h4>100xDevs</h4>
+          <div>28,888 followers</div>
+          <div>12m</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 12 }}>
+        want to know how to win big? Check this out.
+      </div>
+    </>
+  );
 }
 
 export default App;
