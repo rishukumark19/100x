@@ -145,3 +145,19 @@ console.log(filterUsers2(usersArray));
 Create a function that takes an array of objects as input,
 and returns the users whose age > 18 and are male
  */
+
+const usersArray = [
+  { name: "Harkirat", age: 21, gender: "male" },
+  { name: "Raman", age: 22, gender: "male" },
+  { name: "Simran", age: 19, gender: "female" },
+  { name: "Ajay", age: 16, gender: "male" },
+];
+
+const filterUsers = (arr) => {
+  return arr.filter((user) => {
+    return user.age > 18 && user.gender === "male";
+  });
+};
+
+console.log(filterUsers(usersArray));
+// Output: [{ name: "Harkirat", age: 21, gender: "male" }, { name: "Raman", age: 22, gender: "male" }]
